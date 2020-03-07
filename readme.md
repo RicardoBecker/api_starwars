@@ -1,3 +1,41 @@
+# API STAR WARS
+
+API Star Wars 
+
+  - Utiliza dados disponiblizados pela API https://swapi.co
+  - Utiliza o framework Laravel pela sua robustes, confiança, grande presença na comunidade e constantes atualizações.
+  - Gera uma API no formato JSON com os web services detalhados: 
+    - Cadastro de planeta: o nome do planeta e o código do usuário que visitou;
+        - URL: SERVER_NAME/api/planetas?nome_planeta=NOME&id_user=ID
+        
+    - Busca do ranking apresentando em ordem decrescente o usuário que mais
+    visitou os planetas;
+        - URL: SERVER_NAME/api/planeta/topVisitasUser
+        
+    - Listagem de visitas: onde deve listar quais planetas foram visitados por quais
+    usuários;
+        - URL: SERVER_NAME/api/planeta/listaVisita
+        
+    - Busca de informações dos planetas: ao informar um nome o webservice deve
+    retornar todas as informações do planeta, bem como quantas visitas aquele
+    planeta teve.
+        - URL: SERVER_NAME/api/planeta/infoPlaneta/planeta=NOME
+    
+
+Obs: O código foi feito somente para entendimento e em forma de estudo.
+
+---------------- OPCIONAL ----------------
+
+### Docker
+Foi utilizado o ambiente docker para o desenvolvimento, com 3 ambientes separados, so mesmos podem ser 
+encontrados em https://github.com/RicardoBecker/docker-php-nginx-postgresql:
+
+* [nginx] - Servidor!
+* [PHP - Fpm] - uma alternativa para a implementação PHP FastCGI.
+* [PostgreSql] - The World's Most Advanced Open Source Relational Database.
+
+
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
